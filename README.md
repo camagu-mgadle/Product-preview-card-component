@@ -25,6 +25,155 @@ Your users should be able to:
 
 [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
 
+```html
+<figure>
+  <img
+    class="main-img"
+    src="./images/image-product-mobile.jpg"
+    alt="main image"
+    width="300"
+    height="200"
+    srcset="
+      ./images/image-product-mobile.jpg   300w,
+      ./images/image-product-desktop.jpg 1200w
+    "
+    sizes="(min-width: 66em) 33vw,
+            (min-width: 44em) 50vw, 100vw"
+  />
+</figure>
+```
+
+```css
+.card-container {
+  max-width: 350px;
+  background-color: var(--White);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--Black);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.product-img {
+  position: relative;
+  width: 100%;
+  padding-top: 75%;
+}
+
+.product-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-sectiona {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.main-sectionb {
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-section {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.category {
+  font-family: "Montserrat", sans-serif;
+  color: var(--Grey);
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+
+.perfume-info {
+  font-size: 14px;
+  color: var(--Grey);
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.price {
+  color: var(--Green-700);
+  font-family: "Fraunces", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.sr-only {
+  display: flex;
+  font-size: 0.7rem;
+  color: var(--Grey);
+}
+s {
+  color: var(--Grey);
+}
+
+button {
+  background-color: var(--Green-500);
+  color: var(--White);
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .card-container {
+    flex-direction: row;
+    width: 31rem;
+  }
+
+  .product-img {
+    width: 40%;
+    padding-top: 0;
+    height: auto;
+  }
+
+  .main-sectionq {
+    width: 60%;
+    justify-content: center;
+    padding: 30px;
+  }
+  .main-section {
+    width: 60%;
+    justify-content: center;
+    padding: 30px;
+    display: flex;
+  }
+
+  .perfume-infoQ {
+    font-size: var(--Font-size);
+  }
+}
+```
+
 ## Where to find everything
 
 Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design.

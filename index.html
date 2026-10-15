@@ -1,36 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Product preview card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Product preview card component</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fraunces:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <article class="card-container">
+        <figure class="product-img">
+          <picture>
+            <source
+              srcset="./images/image-product-desktop.jpg"
+              media="(min-width: 48em)"
+            />
+            <img
+              class="main-img"
+              src="./images/image-product-mobile.jpg"
+              alt="Perfume image"
+              width="300"
+              height="200"
+            />
+          </picture>
+        </figure>
 
-  Perfume
+        <section class="main-section">
+          <p class="category">perfume</p>
+          <h2 class="section-title" id="section-title">
+            Gabrielle Essence Eau De Parfum
+          </h2>
+          <p class="perfume-info">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <p class="prices">
+            <span class="price">$149.99</span>
+            <del><span class="sr-only">$169.99</span></del>
+          </p>
+          <button
+            class="add-to-cart-btn"
+            type="button"
+            aria-labelledby="section-title"
+          >
+            <img src="./images/icon-cart.svg" alt="" />
+            <span>Add to Cart</span>
+          </button>
+        </section>
+      </article>
+    </main>
 
-  Gabrielle Essence Eau De Parfum
-
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
-
-  $149.99
-  $169.99
-
-  Add to Cart
-  
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
-</body>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Camagu</a>.
+    </footer>
+  </body>
 </html>
